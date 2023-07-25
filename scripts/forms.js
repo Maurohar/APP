@@ -8,12 +8,11 @@ const btnEnviar = document.getElementById("botonEnviar") // ACA CAPTURAMOS EL BO
 
 formularioContacto.addEventListener("submit",(e)=>{
     e.preventDefault();
-    agregarUsuario(); // INVOCAMOS LA FUNCTION CREADA DENTRO DE EL FORMULARIO AÑADIENDOLE EL EVENTO A REALIZAR:
-
+    agregarUsuario(); 
 });
 
 
-class Usuario {   //ESTO ES UNA CLASS NO UN ESPACIO DE MEMORIA.
+class Usuario { 
     constructor(id, nombre, apellido, email, contrasenia) {
         this.id = id,
             this.nombre = nombre,
@@ -22,7 +21,7 @@ class Usuario {   //ESTO ES UNA CLASS NO UN ESPACIO DE MEMORIA.
             this.contrasenia = contrasenia
 
     }
-    //los metodos en class se declaran fuera del constructor.
+
     mostrarDatosObjetos() {
         console.log(`El registro N°${this.id} el nombre del usuario es ${this.nombre} apellido ${this.apellido} Email de registro ${this.email} contraseña ${this.contrasenia}`)
     }
