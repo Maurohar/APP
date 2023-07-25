@@ -11,6 +11,7 @@ export class Book {
     }
 }
 
+//como capturo un boton con el id se trae el objeto entero
 
 //CLASS contructora sobre LocalStorage.
 export async function loadExistingBooks() {

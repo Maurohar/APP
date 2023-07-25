@@ -162,7 +162,13 @@ for (libro of bookshelf) {
                             </div>
                             </div>
                             </div>`;
-    divBook.appendChild(newDivBook);
+    divBook.appendChild(newDivBook)
+
+    let btnComprar = document.getElementById(`btnComprar${libro.id}`)
+    console.log(btnComprar)
+    btnComprar.addEventListener('click',()=>{
+            console.log(`btnComprar`)
+            })
 }
 
 
