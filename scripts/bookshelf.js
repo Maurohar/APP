@@ -18,7 +18,9 @@ let libro1 = [
         "title": "Cuerpo LA GRAN OLA.",
         "pages": "500pp",
         "catalog": "Poemas",
-        "year": "1951"
+        "year": "1951",
+        "price": "5000"
+
     }
 ];
 
