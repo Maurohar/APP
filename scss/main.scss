@@ -1,0 +1,179 @@
+@import "./componentes/variables";
+
+
+
+
+/* ((HEADER - INDEX - NAV)) */ 
+
+.header {    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+
+
+    &.title-vclibros{
+        font-size: 5rem;
+        font-family: 'Castoro Titling', cursive;
+        color: rgba(69, 18, 18, 0.866);
+    }
+
+    &.ul-size a{
+        font-size: 1.3rem;
+        font-family: 'Castoro Titling', cursive;
+        }
+        
+    &.size{
+        font-size: 1.2rem;
+        color: violet;
+    }
+}
+
+
+
+/* main index */
+
+.title-vidriera{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Castoro Titling', cursive;
+}
+
+.parrafos {
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #dd4d4d5d;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+.carrousel-actualidad{
+    background-color: rgba(83, 23, 23, 0.908);
+    border-radius: 20px;
+    
+}
+.parrafos-2{
+        font-size: 1.3rem;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #7b68e671;
+        color: black;
+        border-radius: 20px;
+        padding: 20px;
+                
+}
+
+/* main index cards */
+
+
+    .card-title{
+        font-size: 2rem;
+        font-family: 'Montserrat', sans-serif;
+}
+
+.card-text{
+    font-size: 1.4rem;
+    font-family: $tipoletra-secundario;
+}
+
+.card-size{
+    width: 18rem;
+}
+
+
+/* footer index */
+.icon-size{
+    font-size: 1.7rem;
+}
+
+/* page actualidad */
+
+.header {    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-family: 'Castoro Titling', cursive;
+    color: rgba(83, 23, 23, 0.908);
+}
+
+
+
+/* page catalogos */
+
+
+/* main catalogos*/
+
+.title-catalogos{
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Castoro Titling', cursive;
+}
+
+.books-titles{
+    font-size: 1.4rem;
+    font-family: $tipoletra-secundario;
+}
+
+
+/* page nosotros*/
+
+.title-nosotros{
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Castoro Titling', cursive;
+
+}
+
+/* main nosotros*/
+
+.bg-salmon{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fa8072e6;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* navbar page - registrarse */
+
+/* main */
+
+.bg-img{
+    background-image: url(../imagenes/playa.jpg);
+
+}
+
+.label-font{
+    font-size: 1.7rem;
+
+}
+
+.white-colors{
+    background-color: white;
+
+}
+
+
+
+
+
+
+
+

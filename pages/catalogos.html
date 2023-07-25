@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <script type="module" src="../scripts/catalogo.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="description" content="Venta de libros nacionales e internacionales, nos estamos ocupando de buscar aquel libro de tu interes, aqui compartimos contigo nuestro tereso, los libros!">
+    <title>En nuestra seccion de Catalogos, podras encontrar ese librito, o gran libro que estabas buscando.</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="title-vclibros navbar-brand fs-1" href="../index.html">VCLIBROS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./actualidad.html">Actualidad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Catalogos
+                            </a>
+                            <ul class="ul-size dropdown-menu">
+                                <li><a class="dropdown-item" href="./catalogos.html?filter=terror">terror</a></li>
+                                <li><a class="dropdown-item" href="./catalogos.html?filter=revistas">revistas</a></li>
+                                <li><a class="dropdown-item" href="./catalogos.html?filter=poemas">poemas</a></li>
+                                <li><a class="dropdown-item" href="./catalogos.html?filter=bestsellers">bestsellers</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./catalogos.html">Más...</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./registrarse.html">Registarse</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 size" id="txtSearchCriteria" type="search"
+                            placeholder="¿Que te gustaria leer?" aria-label="Search">
+                        <button class="btn btn-outline-success" id="btnSearch" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+            <a href="carrito.html" class="btn btn-primary"><i class="bi bi-cart2 icon-size btnCarrito"></i></a>
+        </nav>
+    </header>
+<hr>
+
+<main >
+
+    <div>
+        <h2 class="title-catalogos">Catalogos</h2>
+    </div>
+
+
+    <article>
+        <hr>
+        <section>
+            <div class="list-group books-titles" id="bookList">
+        </div>
+        </section>
+    </article>
+
+    <!-- SECCION DE LIBROS DE TERROR -->
+    <!-- <article>
+        <h3 class="title-catalogos">Terror</h3>
+        <hr>
+        <section>
+            <div class="list-group books-titles">
+                <a href="#" class="list-group-item list-group-item-action">Aguirre, Raúl Gustavo, Cuerpo del horizonte
+                    (poemas),
+                    1951, 128 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Móbili, Jorge
+                    Enrique, Convocaciones (poemas), 1951,
+                    32 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Aguirre, Raúl
+                    Gustavo (selección, prólogo y notas),
+                    Antología de una poesía nueva, 1951, 96
+                    pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">Bayley, Edgar,
+                    Realidad interna y función de la poesía
+                    (ensayo), 1952, 40 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Apollinaire, Guillaume
+                    (selección, versión y nota de
+                    Raúl Gustavo Aguirre), 1953, 16 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Éluard, Paul
+                    (selección, versión y nota de Raúl Gustavo
+                    Aguirre), 1953, 16 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-info">Francisco, Guatemala,
+                    1954, 20 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-light">Aguirre, Raúl Gustavo,
+                    La danza nupcial (poema), 1954, 12
+                    pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">de Casasbellas, Ramiro,
+                    El doble fondo, 1954, 24 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action">Vela, Rubén, Verano, 1954, 16 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Jacob, Max
+                    (selección, versión y nota de Raúl Gustavo
+                    Aguirre y Ramiro de Casasbellas),
+                    1954, 16 pp</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Bayley, Edgar
+                    (selección y nota de Raúl Gustavo
+                    Aguirre), 1954, 24 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">Vanasco, Alberto,
+                    Ella en general (poesía), 1954, 56 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Fernández Moreno,
+                    Baldomero, La mariposa y la viga
+                    (aforismos, edición crítica, en parte
+                    inédita), 1955,
+                    32
+                    pp.</a>
+            </div>
+        </section>
+    </article>
+    <hr>
+
+
+    <!-- SECCION LIBROS DE POESIA -->
+   <!-- <article>
+        <section>
+            <h2 class="title-catalogos">Poesia</h2>
+            <hr>
+            <div class="list-group books-titles">
+                <a href="#" class="list-group-item list-group-item-action">Urondo, Francisco, Lugares, 1961. 16 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Alonso, Rodolfo,
+                    Buenos vientos, 1956, 16 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Bondoni, Néstor,
+                    Travesía (relatos), 1956, 48 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">Aguirre, Raúl
+                    Gustavo, Alonso, Rodolfo, Bayley,
+                    Edgar, Bondoni, Osmar Luis, Fernández
+                    Moreno,20 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">César, Giribaldi,
+                    Daniel, Gola, Hugo, Trejo, Mario,
+                    Urondo, Francisco, Vanasco, Alberto,
+                    Diez, 1957. 16 pp</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Poemas de amor
+                    (antología), 1956, 20 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-info">Pizarnik, Alejandra, La
+                    última inocencia (poemas),
+                    1956, 24 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-light">Azcona Cranwell,
+                    Elizabeth, La vida disgregada
+                    (poemas), 1956, 32 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Drummond de Andrade,
+                    Carlos (selección, traducción y
+                    nota de Ramiro de Casasbellas), 1957,
+                    16 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action">Bondoni, Osmar Luis, Poemas, 1957, 24 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Elliff, Osvaldo,
+                    Poemas solos, 1957, 16 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Aguirre, Raúl
+                    Gustavo, Cuaderno de notas (aforismos),
+                    1957, 16 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">Lamborghini,
+                    Leónidas, Al público (poemas), 1957, 16
+                    pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">D’Ornellas, Manuel,
+                    Conquista del mar y la arena, 1957,
+                    16 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Bullrich, Santiago,
+                    Oda telegráfica a Tenochtitlán,
+                    1957, 32 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-info">Porro, Mario, La vigilia
+                    y la roca (poemas), 1957, 16
+                    pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-light">Urondo, Francisco,
+                    Lugares, 1961. 20 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group
+                    item</a>
+                <a href="#" class="list-group-item list-group-item-action">Giribaldi, Daniel, Agua (poemas), 1958, 16
+                    pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Urondo, Francisco,
+                    Breves, 1959, 40 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Urondo, Francisco,
+                    Dos poemas, 1959, 20 pp.</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">Alonso, Rodolfo, Gran
+                    Bebé, 1960, 16 pp.</a>
+            </div>
+        </section>
+    </article>
+
+
+     SECCION DE LIBROS BEST SELLERS -->
+
+
+   <!-- <article>
+        <section>
+            <h2 class="title-catalogos">Best Sellers</h2>
+            <hr>
+            <div class="list-group books-titles">
+                <a href="#" class="list-group-item list-group-item-action">Julio Cortázar: Cuentos</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Evangelios
+                    apócrifos</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Franz Kafka:
+                    América y
+                    Relatos breves</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">Gilbert Keith
+                    Chesterton:
+                    La cruz azul y otros cuentos</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Maurice Maeterlinck:
+                    «La
+                    inteligencia de las flores»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Dino Buzzati: «El
+                    desierto de los tártaros»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-info">Henrik Ibsen: «Peer
+                    Gynt»,
+                    «Hedda Glaber»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-light">José María Eça de
+                    Queiroz:
+                    «El mandarín»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Leopoldo Lugones: «El
+                    imperio jesuítico»</a>
+                <a href="#" class="list-group-item list-group-item-action">Arthur Machen: «Los tres impostores»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">André Gide: «Los
+                    monederos falsos»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Herbert George
+                    Wells:
+                    «La máquina del tiempo» y «El hombre invisible»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">Robert Graves: «Los
+                    mitos
+                    griegos»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Edward Kasner & James
+                    Newman: «Matemáticas e imaginación»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Fiodor Dostoievski:
+                    «Los
+                    demonios»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-info">Eugene O’Neill: «El gran
+                    dios Brown» y «Extraño interludio»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-light">Herman Melville:
+                    «Benito
+                    Cereno», «Bily Budd» y «Bartleby, el escribiente»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Giovanni Papini: «Lo
+                    trágico
+                    cotidiano», «El piloto ciego» y «Palabras y sangre»</a>
+            </div>
+        </section>
+    </article>
+    <hr>
+
+    <article>
+        <section>
+            <h2 class="title-catalogos">Novelas</h2>
+            <hr>
+            <div class="list-group books-titles">
+                <a href="#" class="list-group-item list-group-item-action">Fray Luis de León: «Cantar de cantares» y
+                    «Exposición del Libro de Job»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Joseph Conrad: «El
+                    corazón de las tinieblas» y «Con la soga al cuello»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Oscar Wilde:
+                    «Ensayos y
+                    diálogos»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">Henri Michaux: «Un
+                    bárbaro en Asia»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Hermann Hesse: «El
+                    juego
+                    de los abalorios»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Enoch A. Bennett:
+                    «Enterrado en vida»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-info">Claudio Eliano:
+                    «Historia de
+                    los animales»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-light">Thorstein Veblen:
+                    «Teoría
+                    de la clase ociosa»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Gustave Flaubert: «Las
+                    tentaciones de San Antonio»</a>
+                <a href="#" class="list-group-item list-group-item-action">Gustave Flaubert: «Las tentaciones de San
+                    Antonio»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Marco Polo: «La
+                    descripción del mundo»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Marcel Schwob:
+                    «Vidas
+                    imaginarias»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">George Bernard Shaw:
+                    «César y Cleopatra», «La comandante Bárbar» y «Cándida»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Francisco Quevedo: «La
+                    Fortuna con seso y la hora de todos» y «Marco Bruto»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Eden Phillpotts: «Los
+                    rojos Redmayne»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-info">Sóren Kierkegaard:
+                    «Temor y
+                    temblor»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-light">Gustav Meyrink: «El
+                    Golem»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Henry James: «La lección
+                    del
+                    maestro», «La vida privada» y «La figura en la alfombra»</a>
+                <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Heródoto: «Los nueve
+                    libros de la Historia»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Juan Rulfo: «Pedro
+                    Páramo»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">Rudyard Kipling:
+                    «Relatos»</a>
+            </div>
+        </section>
+    </article>
+
+    <hr>
+    <article>
+        <section>
+            <h2 class="title-catalogos">Revistas</h2>
+            <hr>
+            <div class="list-group books-titles">
+                <a href="#" class="list-group-item list-group-item-action">William Blake: «Poesía completa»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Daniel Defoe: «Moll
+                    Flanders»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Jean Cocteau: «El
+                    secreto profesional y otros textos»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">Thomas de Quincey:
+                    «Los últimos días de Emmanuel Kant y otros escritos»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Ramón Gómez de la
+                    Serna: «Prólogo a la obra de Silverio Lanza»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Antoine Galland: «Las
+                    mil y una noches» (selección)</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-info">Robert Louis Stevenson:
+                    «Las nuevas noches árabes»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-light">León Bloy: «La
+                    salvación por los judíos»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">León Bloy: «La sangre
+                    del pobre» y «En las tinieblas»</a>
+                <a href="#" class="list-group-item list-group-item-action">Bhagavad-Gita. «Poema de Gilgamesh»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Juan José Arreola:
+                    «Cuentos fantásticos»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">«De dama a zorro»,
+                    «Un hombre en el zoológico» y «La vuelta del marinero»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">Jonathan Swíft:
+                    «Viajes de Gulliver»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Paul Groussac:
+                    «Crítica literaria»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Manuel Mujica Láinez:
+                    «Los ídolos»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-info">Juan Ruiz: «Libro de
+                    buen amor»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-light">Ezequiel Martínez
+                    Estrada: «Obra poética»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Edgar Allan Poe:
+                    «Cuentos»</a>
+                <a href="#" class="list-group-item list-group-item-action">William Blake: «Poesía completa»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Hugh Walpole: «En la
+                    plaza oscura»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Edgar Allan Poe:
+                    «Cuentos»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">Publio Virgilio
+                    Marón: «La Eneida»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Voltaire:
+                    «Cuentos»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">J. W Dunne: «Un
+                    experimento con el tiempo»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-info">Attilio Momigliano:
+                    «Ensayo sobre el Orlando Furioso»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-light">William James: «Las
+                    variedades de la experiencia religiosa» y «Estudio sobre la naturaleza
+                    humana»</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Snorri Sturluson: «Saga
+                    de Egil Skallagrimsson»</a>
+            </div>
+            <hr>
+        </section>
+    </article> -->
+</main>
+
+<hr>
+<footer>
+    <div class="container-fluid d-flex justify-content-around">
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26264.513808574957!2d-58.5053515843805!3d-34.62781721848201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc99546769e49%3A0x4d754ad5ca377710!2sFloresta%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1682048789540!5m2!1ses-419!2sar"
+                width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="container">
+        <article class="iconos fs-1 d-flex justify-content-around ">
+            <a target="_blank"
+                href="https://api.whatsapp.com/send?phone=+5491127490416&text=Estoy interesado en un libro"
+                class="bi bi-whatsapp"></a>
+            <a target="_blank" href="mailto: consultas@vclibros.com" class="bi bi-envelope-at"></a>
+            <a target="_blank" href="https://www.instagram.com/astoreterno_/" class="bi bi-instagram"></a>
+        </article>
+    </div>
+    <article class="container">
+        <div class="row">
+            <p class="col-12 d-flex justify-content-around icon-size">
+                Copyright © 2023 VC LIBROS  
+                Política de privacidad
+                Términos y condiciones
+            </p>
+        </div>
+    </article>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

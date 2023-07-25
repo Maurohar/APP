@@ -1,0 +1,139 @@
+/* ((HEADER - INDEX - NAV)) */
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+.header.title-vclibros {
+  font-size: 5rem;
+  font-family: "Castoro Titling", cursive;
+  color: rgba(69, 18, 18, 0.866);
+}
+.header.ul-size a {
+  font-size: 1.3rem;
+  font-family: "Castoro Titling", cursive;
+}
+.header.size {
+  font-size: 1.2rem;
+  color: violet;
+}
+
+/* main index */
+.title-vidriera {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  font-family: "Castoro Titling", cursive;
+}
+
+.parrafos {
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(221, 77, 77, 0.3647058824);
+  color: black;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.carrousel-actualidad {
+  background-color: rgba(83, 23, 23, 0.908);
+  border-radius: 20px;
+}
+
+.parrafos-2 {
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(123, 104, 230, 0.4431372549);
+  color: black;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/* main index cards */
+.card-title {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card-text {
+  font-size: 1.4rem;
+  font-family: "Castoro Titling", cursive;
+}
+
+.card-size {
+  width: 18rem;
+}
+
+/* footer index */
+.icon-size {
+  font-size: 1.7rem;
+}
+
+/* page actualidad */
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-family: "Castoro Titling", cursive;
+  color: rgba(83, 23, 23, 0.908);
+}
+
+/* page catalogos */
+/* main catalogos*/
+.title-catalogos {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  font-family: "Castoro Titling", cursive;
+}
+
+.books-titles {
+  font-size: 1.4rem;
+  font-family: "Castoro Titling", cursive;
+}
+
+/* page nosotros*/
+.title-nosotros {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Castoro Titling", cursive;
+}
+
+/* main nosotros*/
+.bg-salmon {
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(250, 128, 114, 0.9019607843);
+  color: black;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/* navbar page - registrarse */
+/* main */
+.bg-img {
+  background-image: url(../imagenes/playa.jpg);
+}
+
+.label-font {
+  font-size: 1.7rem;
+}
+
+.white-colors {
+  background-color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */
