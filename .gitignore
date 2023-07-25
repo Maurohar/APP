@@ -1,2 +1,1 @@
-node_modules/*
-@popperjs/*
+./node_modules
