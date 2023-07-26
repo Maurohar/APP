@@ -7,103 +7,103 @@ let bookshelf = [];
 let libro1 = [
     {
         "id": 34,
-        "imagen": "hokusai1.jpg",
         "author": "HOKUSAI",
         "title": "Cuerpo LA GRAN OLA.",
         "pages": "500pp",
         "catalog": "Poemas",
         "year": "1951",
-        "price": "5000"
+        "price": "5000",
+        "imagen": "hokusai1.jpg"
 
     }
 ];
 
 let libro2 = {
     "id": 35,
-    "imagen": "solsromaine2.jpg",
     "author": "Sols Romaine Nuevo",
     "title": "Libro de gran formato",
     "pages": "100pp",
     "catalog": "terror",
     "year": "2023",
-    "price": "5000"
+    "price": "5000",
+    "imagen": "solsromaine2.jpg"
 };
 
 let libro3 = {
     "id": 36,
-    "imagen": "vienne3.jpg",
     "author": "Vienne",
     "title": "Libro de gran formato",
     "pages": "100pp",
     "catalog": "bestsellers",
     "year": "2023",
-    "price": "5000"
+    "price": "5000",
+    "imagen": "vienne3.jpg"
 };
 
 let libro4 = {
     "id": 37,
-    "imagen": "truffaut4.jpg",
     "author": "Truffaut",
     "title": "TRUFFAUT HITCHCOCK",
     "pages": "100pp",
     "catalog": "terror",
     "year": "2023",
-    "price": "5000"
+    "price": "5000",
+    "imagen": "truffaut4.jpg"
 };
 
 let libro5 = {
     "id": 38,
-    "imagen": "andrebreton5.jpg",
     "author": "Andre Breton",
     "title": "París, Ediciones del Centro Pompidou.",
     "pages": "512pp",
     "catalog": "poemas",
     "year": "1991",
-    "price": "5000"
+    "price": "5000",
+    "imagen": "andrebreton5.jpg"
 };
 
 let libro6 = {
     "id": 39,
-    "imagen": "delprete6.jpg",
     "author": "Del Prete",
     "title": "Esculturas y Dibujos",
     "pages": "240pp",
     "catalog": "terror",
     "year": "2023",
-    "price": "5000"
+    "price": "5000",
+    "imagen": "delprete6.jpg"
 };
 
 let libro7 = {
     "id": 40,
-    "imagen": "francesbeaufs7.jpg",
     "author": "La France des Beaufs",
     "title": "CABU continúa su exploración del planeta",
     "pages": "100pp",
     "catalog": "poemas",
     "year": "2023",
-    "price": "5000"
+    "price": "5000",
+    "imagen": "francesbeaufs7.jpg"
 };
 
 let libro8 = {
     "id": 41,
-    "imagen": "dessins.jpg",
     "author": "Felini Dessins",
     "title": "Festival de Cine de París. De toda rareza.",
     "pages": "100pp",
     "catalog": "poesia",
     "year": "2023",
-    "price": "5000"
+    "price": "5000",
+    "imagen": "dessins.jpg",
 };
 
 let libro9 = {
     "id": 42,
-    "imagen": "juliabarata9.jpg",
     "author": "Julia Barata",
     "title": "El amor, los hijos, los excesos, la paz, el desayuno de cada mañana",
     "pages": "100pp",
     "catalog": "terror",
     "year": "2023",
-    "price": "5000"
+    "price": "5000",
+    "imagen": "juliabarata9.jpg"
 };
 
 bookshelf.push(libro1, libro2, libro3, libro4, libro5, libro6, libro7, libro8, libro9);
