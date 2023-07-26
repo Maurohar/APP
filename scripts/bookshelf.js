@@ -1,18 +1,12 @@
 import { Book } from "./database";
 
-
-function agregarAlCarrito(libro) {
-    console.log(libro);
-}
-
-agregarAlCarrito();
-
+/* variable para guardar un array de objetos en este caso 9 libros */
 let bookshelf = [];
 
 
 let libro1 = [
     {
-        "id": 1,
+        "id": 34,
         "imagen": "hokusai1.jpg",
         "author": "HOKUSAI",
         "title": "Cuerpo LA GRAN OLA.",
@@ -25,7 +19,7 @@ let libro1 = [
 ];
 
 let libro2 = {
-    "id": 2,
+    "id": 35,
     "imagen": "solsromaine2.jpg",
     "author": "Sols Romaine Nuevo",
     "title": "Libro de gran formato",
@@ -36,7 +30,7 @@ let libro2 = {
 };
 
 let libro3 = {
-    "id": 3,
+    "id": 36,
     "imagen": "vienne3.jpg",
     "author": "Vienne",
     "title": "Libro de gran formato",
@@ -47,7 +41,7 @@ let libro3 = {
 };
 
 let libro4 = {
-    "id": 4,
+    "id": 37,
     "imagen": "truffaut4.jpg",
     "author": "Truffaut",
     "title": "TRUFFAUT HITCHCOCK",
@@ -58,7 +52,7 @@ let libro4 = {
 };
 
 let libro5 = {
-    "id": 5,
+    "id": 38,
     "imagen": "andrebreton5.jpg",
     "author": "Andre Breton",
     "title": "París, Ediciones del Centro Pompidou.",
@@ -69,7 +63,7 @@ let libro5 = {
 };
 
 let libro6 = {
-    "id": 6,
+    "id": 39,
     "imagen": "delprete6.jpg",
     "author": "Del Prete",
     "title": "Esculturas y Dibujos",
@@ -80,7 +74,7 @@ let libro6 = {
 };
 
 let libro7 = {
-    "id": 7,
+    "id": 40,
     "imagen": "francesbeaufs7.jpg",
     "author": "La France des Beaufs",
     "title": "CABU continúa su exploración del planeta",
@@ -91,7 +85,7 @@ let libro7 = {
 };
 
 let libro8 = {
-    "id": 8,
+    "id": 41,
     "imagen": "dessins.jpg",
     "author": "Felini Dessins",
     "title": "Festival de Cine de París. De toda rareza.",
@@ -102,7 +96,7 @@ let libro8 = {
 };
 
 let libro9 = {
-    "id": 9,
+    "id": 42,
     "imagen": "juliabarata9.jpg",
     "author": "Julia Barata",
     "title": "El amor, los hijos, los excesos, la paz, el desayuno de cada mañana",

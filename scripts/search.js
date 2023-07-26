@@ -7,12 +7,14 @@ btnSearch.addEventListener("click", (e) => {
     filterBooks();
 });
 
+/* Filtro para buscar libros por un input, capturamos el input */
 function filterBooks() {
     const searchCriteria = document.getElementById("txtSearchCriteria").value;
     const filteredBookList = database.filterBooks(searchCriteria);
     reloadCatalog(filteredBookList);
 }
 
+/* esta funcion recarga la lista de libros, la resetea y agrega el titulo catalogo de cada seccion de la libreria */
 function reloadCatalog(bookList) {
     const list = document.getElementById("bookList");
     list.innerHTML = '';
@@ -35,20 +37,21 @@ function reloadCatalog(bookList) {
     }
 }
 
+/* si buscamos un libro no existente retorna un innerText especifico */
 function addNoResultsMessage(list) {
     const h = document.createElement("h");
     h.classList = "text-danger";
     h.innerText = "No se encontraron libros para tu búsqueda.";
     list.appendChild(h);
 }
-
+/* crea un h3 y agrega un titulo especifico */
 function addCatalogTitle(list, catalog) {
     const title = document.createElement("h3");
     title.classList = "title-catalogos";
     title.innerText = catalog;
     list.appendChild(title);
 }
-
+/* esta funcion crea una etiqueta y concatena  */
 function addBookItem(list, item) {
     const btnCarrito = createButtonElement("btnComprar" + item.id, "bi bi-cart2 icon-size btnCarrito");
     const a = document.createElement("a");

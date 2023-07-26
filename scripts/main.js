@@ -14,33 +14,6 @@ let loader = document.getElementById("loader")
 let loaderTexto = document.getElementById("loaderTexto")
 let botonFinalizarCompra = document.getElementById("botonFinalizarCompra")
 
-/* newDivBook.innerHTML = `<div class="container">
-                    <div class="row align-items-start">
-                    <div class="col">
-                    <div id="${Book.id}" class="card container card-size">
-                    <img src="./${imagenes/hokusai1.jpg}" class="card-img-top"
-                    alt="Libro de gran formato, Hokusai la gran ola">
-                    <div class="card-body"><p>${Book.author}</p>
-                    <h5 class="card-title size-title">"${Book.title}"</h5>
-                    <p class="card-text">Un día de temporal, una ola gigantesca deja a Naoki, recién nacido, en
-                    la barca de Taro. Pasan siete años y Naoki continúa siendo pequeño, muy pequeño. Para crecer,
-                    ¿deberá volver al océano? Encontrará la respuesta gracias a un fabuloso pez plateado...
-                    Un
-                    cuento sobre la adopción y el crecimiento inspirado en La gran ola de Hokusai. Incluye
-                    conceptos básicos sobre arte: un álbum indispensable para una introducción a la
-                    cultura japonesa.</p>
-                    <p>${Book.pages}</p>
-                    <p>${Book.catalog}</p>
-                    <p>${Book.year}</p>
-
-                    <a href="#" class="btn btn-primary"><i class="bi bi-cart2 icon-size btnCarrito"></i></a>
-                    </div>
-                    </div>
-                    </div>`
-divBook.appendChild(newDivBook) */
-
-//Se creo un array de objetos. 
-
 
 const libro1 = {
     "id": 34,
@@ -164,48 +137,6 @@ for (libro of bookshelf) {
                             </div>`;
     divBook.appendChild(newDivBook)
 
-    let btnComprar = document.getElementById(`btnComprar${libro.id}`)
-    console.log(btnComprar)
-    btnComprar.addEventListener('click',()=>{
-            console.log(`btnComprar`)
-            })
+
 }
-
-
-/* class Shopping {
-    constructor(id, author, title, precio, cantidad, imagen) {
-        this.id = id,
-            this.author = author,
-            this.title = title,
-            this.precio = precio,
-            this.cantidad = cantidad,
-            this.imagen = imagen
-
-
-    }
-}
- */
-
-
-//Carrito de compras
-/* let ShoppingCart = [''];
-
-
-ShoppingCart.innerHTML += `<div class="card border-primary mb-3" id="productoCarrito${productoCarrito.id}" style="max-width: 540px;">
-                                <img class="card-img-top" height="300"px src="">
-                                <div class="card-body">
-                                <p class="card-text">${productoCarrito.author}</p>
-                                <h4 class="card-title">${productoCarrito.titulo}</h4>
-                                <p class="card-text"> Precio Unitario ${productoCarrito.precio}</p>
-                                <p class="card-text"> Total de productos ${productoCarrito.cantidad}</p>
-                                <p class="card-text"> SubTotal ${productoCarrito.cantidad * productoCarrito.precio}</p>
-                                
-                                <button class="btn btn-danger" id="botonEliminarUnidad"${productoCarrito.id}><i class="fas fa-trash-alt"></i></button>
-                                <button class="btn btn-danger" id="botonSumarUnidad"${productoCarrito.id}><i></i></button>
-                                <button class="btn btn-danger" id="botonEliminar">${productoCarrito.id}<i class="fas fa-trash-alt"></i></button>
-                                </div>
-                                </div>`
-ShoppingCart.appendChild('');
-
- */
 

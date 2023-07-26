@@ -87,5 +87,3 @@ export function filterBooks(searchCriteria) {
     bookList = bookList.filter(function (book) { return book.title.toLowerCase().includes(searchCriteria.toLowerCase()) || book.author.toLowerCase().includes(searchCriteria.toLowerCase()) });
     return bookList;
 }
-
-
